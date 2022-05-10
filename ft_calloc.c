@@ -6,10 +6,9 @@
 /*   By: kiijima <kiijima@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/09 12:12:10 by kiijima           #+#    #+#             */
-/*   Updated: 2022/05/10 16:11:03 by kiijima          ###   ########.fr       */
+/*   Updated: 2022/05/10 17:09:11 by kiijima          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
 
 #include "libft.h"
 static	int	is_overflow(size_t count, size_t size)

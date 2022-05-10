@@ -6,16 +6,16 @@
 /*   By: kiijima <kiijima@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/08 18:42:38 by kiijima           #+#    #+#             */
-/*   Updated: 2022/05/10 14:39:30 by kiijima          ###   ########.fr       */
+/*   Updated: 2022/05/10 17:08:21 by kiijima          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
 
-#include	<stdio.h>
-#include	<string.h>
-#include	<limits.h>
+// #include	<stdio.h>
+// #include	<string.h>
+// #include	<limits.h>
 
 # include	<stdlib.h>
 # include	<stddef.h>
@@ -60,4 +60,3 @@ void	ft_putendl_fd(char *s, int fd);
 void	ft_putchar_fd(char c, int fd);
 
 #endif
-

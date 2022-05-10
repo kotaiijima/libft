@@ -6,7 +6,7 @@
 /*   By: kiijima <kiijima@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/08 18:54:00 by kiijima           #+#    #+#             */
-/*   Updated: 2022/05/10 14:52:50 by kiijima          ###   ########.fr       */
+/*   Updated: 2022/05/10 17:11:15 by kiijima          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ void	ft_putstr_fd(char *s, int fd)
 	i = 0;
 	while (s[i])
 	{
-		ft_putchar_fd(s[i],fd);
+		ft_putchar_fd(s[i], fd);
 		i++;
 	}
 }
