@@ -6,7 +6,7 @@
 /*   By: kiijima <kiijima@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/08 18:55:08 by kiijima           #+#    #+#             */
-/*   Updated: 2022/05/09 21:54:43 by kiijima          ###   ########.fr       */
+/*   Updated: 2022/05/18 10:57:41 by kiijima          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,3 +30,18 @@ void	ft_putnbr_fd(int n, int fd)
 		ft_putchar_fd((n % 10) + '0', fd);
 	}
 }
+
+// int main()
+// {
+// 	int fd = open("putnbr_file", O_RDWR | O_CREAT);
+// 	if (fd == -1)
+// 	{
+// 		perror("error!");
+//         exit(EXIT_FAILURE);
+// 	}
+// 	printf("%d\n",fd);
+// 	ft_putnbr_fd(12345, fd);
+
+//     close(fd);
+//     exit(EXIT_SUCCESS);
+// }

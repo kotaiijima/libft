@@ -6,7 +6,7 @@
 /*   By: kiijima <kiijima@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/08 18:42:24 by kiijima           #+#    #+#             */
-/*   Updated: 2022/05/10 14:49:43 by kiijima          ###   ########.fr       */
+/*   Updated: 2022/05/18 09:49:01 by kiijima          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,3 +31,13 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	str[i] = '\0';
 	return (str);
 }
+
+// char	f(unsigned int i, char s)
+// {
+// 	return (i + s);
+// }
+
+// int main()
+// {
+// 	printf("%s\n",ft_strmapi("0000000", f));
+// }

@@ -6,7 +6,7 @@
 /*   By: kiijima <kiijima@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/08 18:54:27 by kiijima           #+#    #+#             */
-/*   Updated: 2022/05/10 17:08:37 by kiijima          ###   ########.fr       */
+/*   Updated: 2022/05/16 22:37:25 by kiijima          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,3 +25,18 @@ void	ft_putendl_fd(char *s, int fd)
 	}
 	ft_putchar_fd('\n', fd);
 }
+
+// int main()
+// {
+// 	int fd = open("putendl_file", O_RDWR | O_CREAT);
+// 	if (fd == -1)
+// 	{
+// 		perror("error!");
+//         exit(EXIT_FAILURE);
+// 	}
+// 	printf("%d\n",fd);
+// 	ft_putendl_fd("abcde", fd);
+
+//     close(fd);
+//     exit(EXIT_SUCCESS);
+// }

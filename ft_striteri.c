@@ -6,7 +6,7 @@
 /*   By: kiijima <kiijima@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/08 18:53:04 by kiijima           #+#    #+#             */
-/*   Updated: 2022/05/09 21:58:12 by kiijima          ###   ########.fr       */
+/*   Updated: 2022/05/18 09:55:12 by kiijima          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,3 +25,15 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char *))
 		i++;
 	}
 }
+
+// void	f(unsigned int i, char *s)
+// {
+// 	(*s += i);
+// }
+
+// int main()
+// {
+// 	char s[] = "0000000";
+// 	ft_striteri(s, f);
+// 	printf("%s\n",s);
+// }

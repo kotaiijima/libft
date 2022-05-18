@@ -8,12 +8,12 @@ OBJS	= ${SRCS:.c=.o}
 NAME = libft.a
 
 .c.o :
-	${CC} ${CFLAGS} -I . -c $< -o ${<:.c=.o}
+	${CC} ${CFLAGS} -c $< -o ${<:.c=.o}
 
 ${NAME} : ${OBJS}
-	ar rcs $(NAME) $(OBJS)
+	ar rc $(NAME) $(OBJS)
 
-all:$(NAME)
+all: $(NAME)
 
 clean:
 	rm -f $(OBJS)
@@ -21,6 +21,6 @@ clean:
 fclean: clean
 	rm -f $(NAME)
 
-re: fclean $(NAME)
+re: fclean all
 
 .PHONY: all clean fclean re
