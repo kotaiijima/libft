@@ -6,7 +6,7 @@
 /*   By: kiijima <kiijima@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/08 18:42:24 by kiijima           #+#    #+#             */
-/*   Updated: 2022/05/18 09:49:01 by kiijima          ###   ########.fr       */
+/*   Updated: 2022/05/19 20:15:28 by kiijima          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,12 @@
 
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
-	unsigned int	i;
+	size_t			i;
 	char			*str;
 
 	if (s == NULL || f == NULL)
+		return (NULL);
+	if (UINT_MAX < ft_strlen(s))
 		return (NULL);
 	str = (char *)malloc(sizeof(char) * (ft_strlen(s) + 1));
 	if (str == NULL)

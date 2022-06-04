@@ -6,7 +6,7 @@
 /*   By: kiijima <kiijima@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/08 18:54:00 by kiijima           #+#    #+#             */
-/*   Updated: 2022/05/16 22:37:56 by kiijima          ###   ########.fr       */
+/*   Updated: 2022/05/20 19:56:55 by kiijima          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,16 +14,14 @@
 
 void	ft_putstr_fd(char *s, int fd)
 {
-	int	i;
+	size_t	len;
 
 	if (s == NULL)
 		return ;
-	i = 0;
-	while (s[i])
-	{
-		ft_putchar_fd(s[i], fd);
-		i++;
-	}
+	len = ft_strlen(s);
+	if (INT_MAX < len)
+		len = len - write(fd, s, len);
+	write(fd, s, len);
 }
 
 // int main()

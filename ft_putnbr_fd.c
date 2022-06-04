@@ -6,7 +6,7 @@
 /*   By: kiijima <kiijima@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/08 18:55:08 by kiijima           #+#    #+#             */
-/*   Updated: 2022/05/18 10:57:41 by kiijima          ###   ########.fr       */
+/*   Updated: 2022/05/28 23:41:54 by kiijima          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,21 +14,17 @@
 
 void	ft_putnbr_fd(int n, int fd)
 {
-	if (n == -2147483648)
-		ft_putstr_fd("-2147483648", fd);
-	else
+	long i;
+
+	i = n;
+	if (i < 0)
 	{
-		if (n < 0)
-		{
-			ft_putchar_fd('-', fd);
-			n = n * -1;
-		}
-		if (n >= 9)
-		{
-			ft_putnbr_fd(n / 10, fd);
-		}
-		ft_putchar_fd((n % 10) + '0', fd);
+		ft_putchar_fd('-', fd);
+		i = i * -1;
 	}
+	if (i >= 9)
+		ft_putnbr_fd(i / 10, fd);
+	ft_putchar_fd((i % 10) + '0', fd);
 }
 
 // int main()

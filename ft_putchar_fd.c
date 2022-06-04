@@ -6,7 +6,7 @@
 /*   By: kiijima <kiijima@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/08 18:53:36 by kiijima           #+#    #+#             */
-/*   Updated: 2022/05/16 22:36:54 by kiijima          ###   ########.fr       */
+/*   Updated: 2022/05/19 18:37:47 by kiijima          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ void	ft_putchar_fd(char c, int fd)
 
 // int main()
 // {
-// 	int fd = open("putchar_file", O_RDWR | O_CREAT);
+// 	int fd = open("putchar_file", O_RDWR);
 // 	if (fd == -1)
 // 	{
 // 		perror("error!");

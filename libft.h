@@ -6,22 +6,22 @@
 /*   By: kiijima <kiijima@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/08 18:42:38 by kiijima           #+#    #+#             */
-/*   Updated: 2022/05/18 10:58:09 by kiijima          ###   ########.fr       */
+/*   Updated: 2022/05/19 18:32:31 by kiijima          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
 
-// #include	<stdio.h>
-// #include	<string.h>
-// #include	<limits.h>
+#include	<stdio.h>
+#include	<string.h>
+#include	<limits.h>
+#include	<fcntl.h>
 
 # include	<stdlib.h>
 # include	<stddef.h>
 # include	<stdint.h>
 # include	<unistd.h>
-# include	<fcntl.h>
 
 int		ft_isalpha(int	c);
 int		ft_isdigit(int	c);
